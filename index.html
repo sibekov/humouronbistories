@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Merriweather:ital@1&family=Oswald&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Document</title>
+  </head>
+
+  <body>
+    <header class="myheading">
+      <h1>
+        <!-- img
+          src="assets/images/Bible-logo.jpg"
+          alt="a book infront of a laptop"
+          id="mylogo"
+        /-->
+        Humour On Bible Stories
+      </h1>
+    </header>
+
+    <section Id="myouter">
+      <div id="myplaysizer">
+        <video
+          id="myvideo"
+          src="assets/images/background_video.mp4"
+          autoplay
+          muted
+          loop
+        ></video>
+      </div>
+      <div id="mycenter">
+        <div class="mygame-area">
+          <div class="mycontrols-area">
+            <button
+              data-type="Jesus"
+              class="mypress mypress--general mypress--green"
+            >
+              Christ
+            </button>
+            <button
+              data-type="Jona"
+              class="mypress mypress--general mypress--blue"
+            >
+              Prophet
+            </button>
+            <button
+              data-type="Elijah"
+              class="mypress mypress--general mypress--orange"
+            >
+              Faithful
+            </button>
+            <button
+              data-type="Moses"
+              class="mypress mypress--general mypress--red"
+            >
+              Egyptian
+            </button>
+          </div>
+
+          <div class="myquestion-area">
+            <div id="bigger">
+              <span>What would</span>
+              <span id="mycharactor">Jesus</span>
+              <span>do with</span>
+              <span id="myoperand">fire?</span>
+            </div>
+            <p class="myanswer-area">
+              <label for="useranswer"
+                >Dropdown to select the correct answer:</label
+              >
+              <select id="useranswer" name="useranswer">
+                <option value="walk over it!">Walk over it!</option>
+                <option value="do a multiplication!">
+                  Do a multiplication!
+                </option>
+                <option value="set it on his friends's heads!">
+                  Set it on his friends's heads!
+                </option>
+                <option value="curse it!">Curse it!</option>
+                <option value="build a mension on it!">
+                  Build a mension on it!
+                </option>
+
+                <option value="deep dive into it">Deep dive into it!</option>
+                <option value="sit and wait for a movie to start">
+                  Sit and wait for a movie to start!
+                </option>
+                <option value="lie down under its shadow">
+                  Lie down under its shadow!
+                </option>
+                <option value="submarine!">Submarine!</option>
+                <option value="try to burn others those who frustrated him">
+                  "Wish to burn others those who frustrated him"
+                </option>
+                <option value="season it!">Season it!</option>
+                <option value="hide in it">Hide in it!</option>
+                <option value="overnight stay">Overnight stay!</option>
+                <option value="three year diet">Three year diet!</option>
+                <option value="start a barbacue">Start a barbacue!</option>
+
+                <option value="divide by Two">Divide by Two!</option>
+                <option value="strike it">strike it!</option>
+                <option value="take of his shoes">Take of his shoes!</option>
+                <option value="make sure it is not eel before eating">
+                  Make sure it is not eel before eating!
+                </option>
+                <option value="listen attentively">listen attentively!</option>
+              </select>
+            </p>
+          </div>
+
+          <button
+            data-type="submit"
+            class="mypress mypress--general mypress--grey"
+          >
+            ANSWER
+          </button>
+          <span id="counterspan">3</span
+          ><span id="counterholder">&nbsp;trys left!</span>
+          <div id="gameoverdiv"></div>
+          <div
+            data-type="restart"
+            class="restart mypress--green"
+            onclick="tryagain();"
+          >
+            Start Over
+          </div>
+        </div>
+
+        <div class="myscore-area">
+          <p class="myscores">Right Answers: <span id="myscore">0</span></p>
+          <p class="myscores">Wrong Answers: <span id="wrong">0</span></p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <span class="myfooter"
+        ><span Id="spgreen">Match the servent</span>
+        <span Id="spblue">with the task and get</span>
+        <span Id="sporange"> a point.Choose Wrong</span>
+        <span Id="spred"
+          >lose a point. The humour is when you think in literal terms </span
+        >...LOL</span
+      >
+      <br />
+      "WINNING SCORE IS 20/20"
+    </footer>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

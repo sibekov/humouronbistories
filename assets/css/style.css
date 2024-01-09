@@ -1,0 +1,245 @@
+#bigger {
+    font-size: 250%;
+}
+
+#gameoverdiv {
+    font-size: 150%;
+    color: red;
+    border: none;
+    outline: none;
+    margin-top: 10%;
+    background-color: black;
+    text-align: center;
+    margin-bottom: 10%;
+}
+
+#counterspan {
+    color: white;
+    border: solid;
+    margin-left: 5%;
+    background-color: green;
+    font-size: 150%;
+    border-radius: 45%;
+    padding: 1%;
+
+}
+
+
+#counterholder {
+
+    color: green;
+}
+
+#myplaysizer {
+    width: auto;
+    height: auto;
+}
+
+#useranswer {
+    font-size: 150%;
+    color: white;
+    background: green;
+}
+
+.restart {
+    text-align: center;
+    background: white;
+    color: black;
+    border-radius: 45%;
+    margin: auto;
+    border: solid;
+}
+
+
+
+
+body {
+
+    background-color: rgb(227, 227, 244);
+}
+
+
+
+.myheading {
+    background-color: rgb(227, 227, 244);
+    margin: auto;
+    text-align: center;
+    font-size: 100%;
+    clear: both;
+    position: relative;
+
+
+}
+
+#mylogo {
+    width: 10%;
+    height: 10%;
+    float: left;
+
+}
+
+
+.mypress--general {
+    border: solid;
+    border-style: inset;
+}
+
+.mypress--general::after {
+    content: attr(data-type);
+}
+
+
+.mycotrols-area {
+    margin: 15%;
+}
+
+.mypress--green {
+    margin: 1%;
+    color: green;
+
+}
+
+
+.myanswer-area {
+
+    overflow: hidden;
+
+}
+
+
+
+
+.mypress--green:active,
+.mypress--green:hover {
+    margin: 1%;
+    color: white;
+    background-color: green;
+
+}
+
+
+.mypress--blue {
+    margin: 1%;
+    color: blue;
+}
+
+.mypress--blue:active,
+.mypress--blue:hover {
+    margin: 1%;
+    color: white;
+    background-color: green;
+
+}
+
+
+.mypress--orange {
+    margin: 1%;
+    color: orange;
+}
+
+.mypress--orange:active,
+.mypress--orange:hover {
+    margin: 1%;
+    color: white;
+    background-color: green;
+
+}
+
+
+
+.mypress--red {
+    margin: 1%;
+    color: red;
+}
+
+.mypress--red:active,
+.mypress--red:hover {
+    margin: 1%;
+    color: white;
+    background-color: green;
+
+}
+
+
+.mypress--gray {
+    margin: 1%;
+    color: grey;
+
+}
+
+.mypress--grey:active,
+.mypress--grey:hover {
+    margin: 1%;
+    color: white;
+    background-color: green;
+}
+
+#myouter {
+    position: relative;
+
+}
+
+#myvideo {
+    width: 100%;
+    height: 70%;
+}
+
+
+#mycenter {
+
+    width: auto;
+    height: auto;
+    background-color: rgba(227, 227, 244, 0.6);
+    right: 25%;
+    bottom: 65%;
+    position: absolute;
+    border: solid;
+    padding: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+
+
+}
+
+/**Media queries to be triggered once the screen size starts getting smaller.**/
+
+@media screen and (max-width:900px) {
+
+    #mycenter {
+
+        width: 65%;
+        height: 80%;
+        margin: 0 auto;
+        top: 10%;
+        position: absolute;
+        right: 12%;
+    }
+
+}
+
+footer {
+
+    height: 50px;
+    text-align: center;
+
+    border-radius: 10%;
+
+}
+
+#spred {
+    color: red;
+}
+
+#spblue {
+    color: blue;
+}
+
+#sporange {
+    color: orange;
+}
+
+#spgreen {
+    color: green;
+}
