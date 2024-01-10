@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 let newlist = [];
 let mylist = ['water?', 'a rock?', 'a tree?', 'a fish?', 'fire?'];
-
+let listchecka = [];
 
 function myrunGame(mygameType) {
     let charactor = mygameType;
@@ -40,13 +40,17 @@ function myrunGame(mygameType) {
         mygameover();
 
     }
-    else if (newlist.length === 5 && counta > 0) {
-        alert(`Congratulations you have finished the ${charactor} level !!!! `);
+    else if (newlist.length === 5) {
+        alert(`Congratulations you have finished the game !!!! `);
         winner(charactor);
         console.log(newlist);
     }
     else {
         let operand = mylist.pop();
+        if (newlist.includes(operand)) {
+
+            myrunGame(mygameType);
+        }
 
         if (charactor === 'Jesus') {
             displayjesusQuestion(charactor, operand);
@@ -66,6 +70,7 @@ function myrunGame(mygameType) {
         }
 
         mylist.unshift(operand);
+        //newlist.unshift(operand);
 
 
     }
@@ -260,7 +265,7 @@ function mycounter() {
 function winner(charactor) {
     document.getElementById("gameoverdiv").style.backgroundColor = "green";
     document.getElementById("gameoverdiv").style.color = "yellow";
-    document.getElementById("gameoverdiv").innerHTML = "!!!! Congratulations You Have Finished the GAMEl!!! Hit the 'Try Again' buttton  for a different set of questions";
+    document.getElementById("gameoverdiv").innerHTML = "!!!! Congratulations You Have Finished the GAMEl!!! Hit the 'Start Over' buttton  for a different set of questions";
 
     const buttons = document.querySelectorAll("button");
     buttons.forEach(button => button.disabled = true);
