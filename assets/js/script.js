@@ -265,7 +265,7 @@ function mycounter() {
 function winner(charactor) {
     document.getElementById("gameoverdiv").style.backgroundColor = "green";
     document.getElementById("gameoverdiv").style.color = "yellow";
-    document.getElementById("gameoverdiv").innerHTML = "!!!! Congratulations You Have Finished the GAMEl!!! Hit the 'Start Over' buttton  for a different set of questions";
+    document.getElementById("gameoverdiv").innerHTML = "!!!! Congratulations You Have Finished the GAMEl!!! <br/> Hit the 'Start Over' buttton  for <br/> a different set of questions";
 
     const buttons = document.querySelectorAll("button");
     buttons.forEach(button => button.disabled = true);
