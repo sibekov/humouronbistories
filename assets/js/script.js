@@ -281,7 +281,7 @@ function winner(charactor) {
 
 
 function mygameover() {
-    document.getElementById("gameoverdiv").innerHTML = "...!!GAME OVER!!...     you only get 3 chances...";
+    document.getElementById("gameoverdiv").innerHTML = "...!!GAME OVER!!...  <br/>   you only get 3 chances... <br/> Click 'Start Over' button below <br/> to try again";
     const buttons = document.querySelectorAll("button");
     buttons.forEach(button => button.disabled = true);
 
