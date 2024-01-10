@@ -20,6 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
 let newlist = [];
 let mylist = ['water?', 'a rock?', 'a tree?', 'a fish?', 'fire?'];
 
+
 function myrunGame(mygameType) {
     let charactor = mygameType;
 
@@ -89,6 +90,8 @@ function mycheckAnswer() {
             console.log(newlist);
         }
         console.log(newlist);
+
+
     }
     else {
         alert(`Sorry... you said ${myuserAnswer}.  But the correct answer is ${myAnswer[1]}`);
@@ -257,18 +260,28 @@ function mycounter() {
 function winner(charactor) {
     document.getElementById("gameoverdiv").style.backgroundColor = "green";
     document.getElementById("gameoverdiv").style.color = "yellow";
-    document.getElementById("gameoverdiv").innerHTML = `!!!! Congratulations You Have Finished the ${charactor} level!!!`;
+    document.getElementById("gameoverdiv").innerHTML = "!!!! Congratulations You Have Finished the GAMEl!!! Hit the 'Try Again' buttton  for a different set of questions";
 
     const buttons = document.querySelectorAll("button");
     buttons.forEach(button => button.disabled = true);
+
+    //const button = document.getElementById("myButton");
+
+    // Disable the button
+    //button.disabled = true;
+    // bp = this.getAttribute("data-type") === charactor;
+
+    // bp.disabled = true;
 }
 
 
 function mygameover() {
     document.getElementById("gameoverdiv").innerHTML = "...!!GAME OVER!!...     you only get 3 chances...";
-
     const buttons = document.querySelectorAll("button");
     buttons.forEach(button => button.disabled = true);
+
+
+
 
 }
 
